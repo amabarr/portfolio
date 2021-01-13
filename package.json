@@ -1,5 +1,5 @@
 {
-  "name": "amanda-barrafato-s-portfolio",
+  "name": "amanda-barrafatos-portfolio",
   "version": "1.0.0",
   "private": true,
   "description": "Amanda Barrafato's Portfolio",
@@ -25,5 +25,8 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-helmet": "^6.1.0"
+  },
+  "devDependencies": {
+    "prettier": "2.2.1"
   }
 }
