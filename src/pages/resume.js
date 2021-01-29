@@ -1,9 +1,12 @@
-import * as React from "react"
+import * as React from "react";
+import Layout from "../components/layout";
 
 const resume = () => (
-  <>
-  <h2> YO, here is my resume, check it out </h2>
-  </>
-)
+	<>
+		<Layout>
+			<h2> YO, here is my resume, check it out </h2>
+		</Layout>
+	</>
+);
 
-export default resume
+export default resume;

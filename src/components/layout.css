@@ -1,0 +1,98 @@
+* {
+	box-sizing: border-box;
+}
+
+/* Gatbsy fixes */
+
+#___gatsby {
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	height: 100%;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+}
+
+/* Header */
+header {
+	display: flex;
+	justify-content: space-around;
+	font-size: 1rem;
+	background-color: #211b21;
+	padding: 20px;
+}
+
+header a {
+	color: white;
+	font-family: "Fira Code", monospace;
+	text-decoration: none;
+	padding: 3px;
+}
+
+.links {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	width: 45%;
+	flex-wrap: wrap;
+}
+
+.links a {
+	display: flex;
+	align-items: center;
+}
+
+header a:hover {
+	color: peachpuff;
+}
+
+#name a {
+	font-family: "Creepster", cursive;
+	font-size: 3rem;
+}
+
+/* Main */
+.main {
+	display: flex;
+	color: white;
+	background-color: #211b21;
+	min-height: 90vh;
+	height: 100%;
+	box-sizing: border-box;
+	padding: 1em 1em;
+}
+
+/* Testing cool CSS Section */
+/* About me section*/
+
+#index {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.about {
+	text-align: center;
+}
+
+.pictureOfMe img {
+	height: 18rem;
+}
+
+/* Footer */
+
+footer {
+	width: 100%;
+	background-color: #211b21;
+	padding: 1em 1em;
+}
+
+footer img {
+	width: 2rem;
+}
+
+/* media query for smaller screens */
