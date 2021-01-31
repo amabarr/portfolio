@@ -1,22 +1,16 @@
-import * as React from "react";
-import { Link } from "gatsby";
+import React from "react";
 import FooterLinks from "./footerLinks";
-import "./layout.css";
+import Header from "./header";
+
+import "../styles/layout.css";
 
 const Layout = ({ children }) => {
 	return (
 		<>
-			<header>
-				<div id='name'>
-					<Link to='/'>Amanda Barrafato</Link>
-				</div>
-				<div className='links'>
-					<Link to='/projects'>projects!</Link>
-					<Link to='/music'>music!</Link>
-					<Link to='/resume'>resume!</Link>
-				</div>
+			<header className='flex'>
+				<Header />
 			</header>
-			<main className='main'>{children}</main>
+			<main className='main flex'>{children}</main>
 			<footer>
 				<FooterLinks />
 			</footer>

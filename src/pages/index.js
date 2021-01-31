@@ -6,12 +6,15 @@ const IndexPage = () => (
 	<>
 		<Layout>
 			<div id='index'>
-				<div className='headlines'>
-					<h1>Hi! I'm Amanda</h1>
+				<span>
+					<h2>Hi! I'm Amanda</h2>
 					<h3>
 						an audio engineer, fullstack softare engineer, and a musician!
 					</h3>
-				</div>
+					<span className='pictureOfMe'>
+						<img src={selfPortrait} alt='Amanda' />
+					</span>
+				</span>
 				<span className='aboutMe'>
 					<h2>About Me</h2>
 					<p>
@@ -20,9 +23,6 @@ const IndexPage = () => (
 						how I went on this jounrey to become a software engineerr...... in
 						south Brooklyn born and raised
 					</p>
-					<span className='pictureOfMe'>
-						<img src={selfPortrait} alt='Amanda' />
-					</span>
 				</span>
 			</div>
 		</Layout>

@@ -1,12 +1,13 @@
 import * as React from "react";
 import Layout from "../components/layout";
+import Resume from "../components/resume";
 
-const resume = () => (
+const Skills = () => (
 	<>
 		<Layout>
-			<h2> YO, here is my resume, check it out </h2>
+			<Resume />
 		</Layout>
 	</>
 );
 
-export default resume;
+export default Skills;

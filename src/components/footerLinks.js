@@ -2,7 +2,7 @@ import * as React from "react";
 import linkedin from "../images/icons/LI-In-Bug.png";
 
 const FooterLinks = () => (
-	<div className='footer links'>
+	<div className='footer links flex'>
 		<a href='https://www.linkedin.com/in/amanda-barrafato/'>
 			<img src={linkedin} alt='LinkedIn logo' />
 		</a>
