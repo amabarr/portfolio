@@ -1,5 +1,6 @@
 import * as React from "react";
 import linkedin from "../images/icons/LI-In-Bug.png";
+import githubPhoto from "../images/icons/GitHub-Mark-Light-64px.png";
 
 const FooterLinks = () => (
 	<div className='footer links flex'>
@@ -7,7 +8,7 @@ const FooterLinks = () => (
 			<img src={linkedin} alt='LinkedIn logo' />
 		</a>
 		<a href='https://github.com/amabarr/'>
-			<img src='/icons/GitHub-Mark-Light-32px.png' alt='Github Logo' />
+			<img src={githubPhoto} alt='Github Logo' />
 		</a>
 	</div>
 );

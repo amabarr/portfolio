@@ -7,7 +7,7 @@ const IndexPage = () => (
 		<Layout>
 			<div id='index'>
 				<h2>Hi! I'm Amanda</h2>
-				<h3>an audio engineer, fullstack softare engineer, and a musician!</h3>
+				<h3>an audio engineer, fullstack software engineer, and a musician!</h3>
 
 				<img src={selfPortrait} alt='Amanda' />
 
