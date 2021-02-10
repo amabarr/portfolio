@@ -11,7 +11,7 @@ const Layout = ({ children }) => {
 				<Header />
 			</header>
 			<main className='main flex'>{children}</main>
-			<footer>
+			<footer className='flex'>
 				<FooterLinks />
 			</footer>
 		</>

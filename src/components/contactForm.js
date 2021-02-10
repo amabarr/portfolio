@@ -1,5 +1,19 @@
-import * as React from "react";
+import React, { useState } from "react";
 
-const ContactForm = () => <div className='contact'>CONTACT ME</div>;
-
-export default ContactForm;
+export default () => {
+	return (
+		<div className='contact'>
+			<form method='post' action='mailto:abarrafato@gmail.com'>
+				<label htmlFor='Subject'>
+					<h3>Subject</h3>
+					<input id='Subject:' placeholder='Subject' />
+				</label>
+				<label htmlFor='Body:'>
+					<h3>Body</h3>
+					<textarea id='Body:' placeholder='Say something' />
+				</label>
+				<button type='submit'>Send</button>
+			</form>
+		</div>
+	);
+};

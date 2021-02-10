@@ -3,14 +3,20 @@
 }
 
 /* Gatbsy fixes */
-
+body,
 #___gatsby {
+	height: 100vh;
+}
+
+#gatsby-focus-wrapper {
+	display: flex;
+	flex-direction: column;
 	height: 100%;
 }
 
 body {
 	margin: 0;
-	height: 100%;
+	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
 
@@ -46,7 +52,6 @@ body.dark {
 /* Header */
 header {
 	background-color: var(--headerColor);
-	/* flex-direction: column; */
 	align-items: center;
 	justify-content: space-around;
 	font-size: 1rem;
@@ -80,26 +85,55 @@ header a:hover {
 	font-size: 3rem;
 }
 
-/* #name a:hover {
-	color: red;
-} */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0px;
+}
 
 /* Main */
 .main {
 	flex-direction: column;
 	align-items: center;
-	min-height: 80vh;
-	padding: 1em 1em;
+	flex: 1 1;
+	padding: 2rem 2rem;
+	flex-basis: 60%;
 }
 
-h4 {
-	margin: 0px;
+.main div {
+	display: flex;
 }
-/* Testing cool CSS Section */
+
 /* About me section*/
 
 #index {
+	height: 100%;
+	width: 100%;
 	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	flex: 1 0;
+}
+
+#index img {
+	height: 18rem;
+	width: 18rem;
+	border-radius: 150px;
+}
+
+main span {
+	display: flex;
+	flex-direction: column;
+	flex: 1 0;
+	flex-wrap: wrap;
+}
+
+main p {
+	display: flex;
+	flex: 1 0;
 	flex-wrap: wrap;
 }
 
@@ -125,6 +159,13 @@ h4 {
 	flex-direction: column;
 	flex: 1;
 	border: 1px solid var(--borderColor);
+}
+
+/* Contact Form */
+
+.contact {
+	display: flex;
+	flex-direction: column;
 }
 
 /* Footer */
