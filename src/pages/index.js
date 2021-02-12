@@ -1,17 +1,20 @@
 import * as React from "react";
 import Layout from "../components/layout";
 import AboutMe from "../components/aboutMe";
-import selfPortrait from "../images/githubphoto.jpg";
+import Resume from "../data/Amanda_Barrafato_Resume.pdf";
+import TimeLine from "../components/timeline";
 
 const IndexPage = () => (
 	<>
 		<Layout>
 			<div id='index'>
 				<AboutMe />
-				<h2>Hi! I'm Amanda</h2>
-				<h3>an audio engineer, fullstack software engineer, and a musician!</h3>
 
-				<img src={selfPortrait} alt='Amanda' />
+				<a href={Resume} className='underline'>
+					Download My Resume
+				</a>
+
+				<TimeLine />
 			</div>
 		</Layout>
 	</>

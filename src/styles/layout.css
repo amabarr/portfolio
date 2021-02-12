@@ -19,6 +19,7 @@ body {
 	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
+	font-family: "Fira Code", monospace;
 
 	--bg: white;
 	--textNormal: black;
@@ -29,6 +30,8 @@ body {
 	--headerColor: rgb(181, 134, 181);
 	--primary: rgb(181, 134, 181);
 	--secondary: #c8bfff;
+	--cardColor: white;
+	--formColor: white;
 	--hoverColor: rgb(0, 0, 0);
 
 	background-color: var(--bg);
@@ -37,14 +40,17 @@ body {
 
 body.dark {
 	--webkit-font-smoothing: antialiased;
-	--bg: #211b21;
+	--bg: #121212;
 	--textNormal: white;
+	--textSecondary: #b3b3b3;
 	--textDecor: white;
 	--textTitle: white;
 	--textLink: white;
 	--borderColor: white;
 	--hr: rgb(181, 134, 181);
-	--headerColor: #211b21;
+	--headerColor: #404040;
+	--formColor: #404040;
+	--cardColor: #404040;
 	--secondary: #7c6fa8;
 	--primary: rgb(121, 85, 121);
 	--hoverColor: rgb(212, 179, 240);
@@ -63,10 +69,10 @@ header {
 	padding: 20px;
 }
 
-header a {
+a {
 	color: var(--textTitle);
-	font-family: "Fira Code", monospace;
 	text-decoration: none;
+	text-align: center;
 	padding: 3px;
 }
 
@@ -81,6 +87,7 @@ header a {
 .underline {
 	background-image: linear-gradient(120deg, var(--primary), var(--secondary));
 	background-repeat: no-repeat;
+	text-transform: uppercase;
 	background-size: 100% 0.2em;
 	background-position: 0 88%;
 	transition: background-size 0.25s ease-in;
@@ -90,7 +97,7 @@ header a {
 	background-size: 100% 88%;
 }
 
-#name a {
+.amanda {
 	display: flex;
 	align-items: center;
 	font-family: "Creepster", cursive;
@@ -119,6 +126,12 @@ h6 {
 	margin: 0px;
 }
 
+h4,
+h5,
+h6 {
+	color: var(--textSecondary);
+}
+
 /* Main */
 .main {
 	flex-direction: column;
@@ -139,7 +152,6 @@ h6 {
 	width: 100%;
 	display: flex;
 	flex-direction: column;
-	flex-wrap: wrap;
 	flex: 1 0;
 }
 
@@ -147,36 +159,44 @@ h6 {
 	height: 18rem;
 	width: 18rem;
 	border-radius: 150px;
+	border: 10px double var(--secondary);
 }
 
-main span {
-	display: flex;
+.aboutMe {
+	background-color: var(--cardColor);
 	flex-direction: column;
-	flex: 1 0;
-	flex-wrap: wrap;
-}
-
-main p {
-	display: flex;
-	flex: 1 0;
-	flex-wrap: wrap;
+	align-content: center;
+	justify-content: center;
+	align-items: center;
+	justify-items: center;
 }
 
 .about {
+	flex-direction: column;
+	width: 50%;
+	height: 50%;
 	text-align: center;
+	align-content: center;
+	justify-content: center;
 }
 
-.pictureOfMe img {
-	height: 18rem;
+p {
+	text-align: center;
 }
 
 /* Resume */
 .resumeArea {
-	display: flex;
+	flex-direction: column;
 	width: 85%;
 	height: 85%;
-	justify-content: space-between;
 	align-content: center;
+	justify-content: center;
+	align-items: center;
+}
+
+.skillsList {
+	justify-content: space-between;
+	width: 100%;
 }
 
 .skills {
@@ -184,7 +204,7 @@ main p {
 	padding: 1rem;
 	flex-direction: column;
 	flex: 1;
-	border: 1px solid var(--borderColor);
+	border: 5px solid var(--primary);
 }
 
 /* Contact Form */
@@ -204,14 +224,24 @@ main p {
 	width: 30rem;
 }
 
+::placeholder {
+	color: var(--textSecondary);
+}
+
 .contact input {
+	background-color: var(--formColor);
+	color: var(--textNormal);
+	border: 3px solid var(--primary);
 	padding: 0.5rem 0.5rem;
 	border-radius: 5px;
 	margin-bottom: 0.5rem;
 }
 
 .contact textarea {
+	background-color: var(--formColor);
+	color: var(--textNormal);
 	padding: 0.5rem 0.5rem;
+	border: 3px solid var(--primary);
 	border-radius: 5px;
 	margin-bottom: 0.5rem;
 	resize: none;
@@ -226,7 +256,7 @@ main p {
 	transition: 0.5s;
 	background-size: 200% auto;
 	border-radius: 10px;
-	box-shadow: 0 0 20px var(--secondary);
+	box-shadow: 0 0 5px var(--secondary);
 	color: var(--textDecor);
 }
 
@@ -250,6 +280,12 @@ main p {
 /* .banner {
 	width: 20rem;
 } */
+
+/* Timeline */
+.timeline {
+	border-left: 10px solid var(--secondary);
+}
+
 /* Footer */
 
 footer {
