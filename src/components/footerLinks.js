@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 import linkedin from "../images/icons/LI-In-Bug.png";
 import githubPhoto from "../images/icons/GitHub-Mark-Light-64px.png";
 

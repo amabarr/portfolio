@@ -22,11 +22,14 @@ body {
 
 	--bg: white;
 	--textNormal: black;
+	--textDecor: white;
 	--textTitle: black;
 	--textLink: black;
 	--borderColor: black;
 	--headerColor: rgb(181, 134, 181);
-	--hoverColor: white;
+	--primary: rgb(181, 134, 181);
+	--secondary: #c8bfff;
+	--hoverColor: rgb(0, 0, 0);
 
 	background-color: var(--bg);
 	color: var(--textNormal);
@@ -36,11 +39,14 @@ body.dark {
 	--webkit-font-smoothing: antialiased;
 	--bg: #211b21;
 	--textNormal: white;
+	--textDecor: white;
 	--textTitle: white;
 	--textLink: white;
 	--borderColor: white;
 	--hr: rgb(181, 134, 181);
 	--headerColor: #211b21;
+	--secondary: #7c6fa8;
+	--primary: rgb(121, 85, 121);
 	--hoverColor: rgb(212, 179, 240);
 }
 
@@ -51,7 +57,6 @@ body.dark {
 
 /* Header */
 header {
-	background-color: var(--headerColor);
 	align-items: center;
 	justify-content: space-around;
 	font-size: 1rem;
@@ -73,8 +78,16 @@ header a {
 	flex-wrap: wrap;
 }
 
-header a:hover {
-	color: var(--hoverColor);
+.underline {
+	background-image: linear-gradient(120deg, var(--primary), var(--secondary));
+	background-repeat: no-repeat;
+	background-size: 100% 0.2em;
+	background-position: 0 88%;
+	transition: background-size 0.25s ease-in;
+}
+
+.underline:hover {
+	background-size: 100% 88%;
 }
 
 #name a {
@@ -83,6 +96,18 @@ header a:hover {
 	font-family: "Creepster", cursive;
 	text-align: center;
 	font-size: 3rem;
+}
+
+.amanda:hover {
+	background-image: linear-gradient(120deg, var(--primary), var(--secondary));
+	background-repeat: no-repeat;
+	background-size: 100% 0.2em;
+	background-position: 0 88%;
+	transition: background-size 2s ease-in;
+	background-repeat: repeat;
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 h1,
@@ -147,8 +172,9 @@ main p {
 
 /* Resume */
 .resumeArea {
-	width: 95%;
-	height: 100%;
+	display: flex;
+	width: 85%;
+	height: 85%;
 	justify-content: space-between;
 	align-content: center;
 }
@@ -163,16 +189,72 @@ main p {
 
 /* Contact Form */
 
+.contactForm {
+	display: flex;
+	margin-top: 4rem;
+	justify-content: center;
+	align-content: center;
+	width: 100%;
+	height: 100%;
+}
 .contact {
 	display: flex;
 	flex-direction: column;
+	height: 100%;
+	width: 30rem;
 }
 
+.contact input {
+	padding: 0.5rem 0.5rem;
+	border-radius: 5px;
+	margin-bottom: 0.5rem;
+}
+
+.contact textarea {
+	padding: 0.5rem 0.5rem;
+	border-radius: 5px;
+	margin-bottom: 0.5rem;
+	resize: none;
+	height: 55%;
+}
+
+.contact button {
+	height: 2.5rem;
+	background-image: linear-gradient(to right, var(--primary), var(--secondary));
+	border: 0;
+	text-transform: uppercase;
+	transition: 0.5s;
+	background-size: 200% auto;
+	border-radius: 10px;
+	box-shadow: 0 0 20px var(--secondary);
+	color: var(--textDecor);
+}
+
+.contact button:hover {
+	background-position: right center;
+}
+
+/* Music Section */
+
+.music {
+	flex-direction: column;
+	flex: 0 1;
+	align-content: center;
+	width: 100%;
+}
+
+.musicPlayers {
+	flex-direction: column;
+}
+
+/* .banner {
+	width: 20rem;
+} */
 /* Footer */
 
 footer {
 	width: 100%;
-	background-color: #211b21;
+	background-color: var(--primary);
 	padding: 1em 1em;
 	margin: 0px;
 	display: flex;
@@ -186,8 +268,6 @@ footer .links {
 footer img {
 	width: 2rem;
 }
-
-/* media query for smaller screens */
 
 /* theme-selector */
 .theme-changer {
@@ -277,5 +357,18 @@ body.light .gg-sun {
 }
 
 .gg-moon:hover {
-	color: white;
+	color: var(--headerColor);
+}
+
+/* media query for smaller screens */
+/* Media Queries for footer */
+
+@media (max-width: 600px) {
+	.banner {
+		width: 20rem;
+	}
+
+	footer {
+		width: 100%;
+	}
 }
