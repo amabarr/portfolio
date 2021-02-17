@@ -1,10 +1,10 @@
 import * as React from "react";
-import Layout from "../components/layout";
-import Music from "../components/music";
+import { Layout, Music, SEO } from "../components";
 
 const music = () => (
 	<>
 		<Layout>
+			<SEO title='Music' />
 			<div className='musicPage flex'>
 				<Music />
 			</div>

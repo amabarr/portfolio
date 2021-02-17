@@ -1,10 +1,10 @@
 import * as React from "react";
-import Layout from "../components/layout";
-import Resume from "../components/resume";
+import { Layout, Resume, SEO } from "../components";
 
 const Skills = () => (
 	<>
 		<Layout>
+			<SEO title='Skills' />
 			<Resume />
 		</Layout>
 	</>
