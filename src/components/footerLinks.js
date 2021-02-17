@@ -1,14 +1,14 @@
 import React from "react";
-import linkedin from "../images/icons/LI-In-Bug.png";
-import githubPhoto from "../images/icons/GitHub-Mark-Light-64px.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 const FooterLinks = () => (
-	<div className='footer links flex'>
+	<div className='footer iconLinks links flex'>
 		<a href='https://www.linkedin.com/in/amanda-barrafato/'>
-			<img src={linkedin} alt='LinkedIn logo' />
+			<FontAwesomeIcon icon={faLinkedin} />
 		</a>
 		<a href='https://github.com/amabarr/'>
-			<img src={githubPhoto} alt='Github Logo' />
+			<FontAwesomeIcon icon={faGithub} />
 		</a>
 	</div>
 );

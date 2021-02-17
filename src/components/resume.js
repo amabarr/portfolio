@@ -2,7 +2,7 @@ import React from "react";
 import Resume from "../data/Amanda_Barrafato_Resume.pdf";
 
 const Skills = () => (
-	<div className='resumeArea flex'>
+	<div className='resumeArea'>
 		<div className='skillsList flex'>
 			<div className='skills flex'>
 				<h3>Frontend</h3>

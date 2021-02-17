@@ -1,13 +1,13 @@
 import React from "react";
-import selfPortrait from "../images/githubphoto.jpg";
+import selfPortrait from "../images/me.jpg";
+import Resume from "../data/Amanda_Barrafato_Resume.pdf";
 
 const AboutMe = () => {
 	return (
 		<div className='aboutMe'>
-			<img src={selfPortrait} alt='Amanda' />
+			<img src={selfPortrait} alt='Amanda' className='selfPortait' />
 			<div className='about'>
-				<h3>Amanda Barrafato</h3>
-				<h5> Fullstack Engineer</h5>
+				<h2>Hi, I'm Amanda</h2>
 				<span>
 					<p>
 						I am a musician, audio engineer and fullstack engineer based in
@@ -25,8 +25,11 @@ const AboutMe = () => {
 						reading a book next to my cat Lucas, at a concert, playing dungeons
 						and dragons, or playing an RPG.
 					</p>
-					Links to linkedIn & github & medium here
 				</span>
+
+				<a href={Resume} className='underline'>
+					Download My Resume
+				</a>
 			</div>
 		</div>
 	);
