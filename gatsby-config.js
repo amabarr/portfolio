@@ -1,6 +1,8 @@
 module.exports = {
 	siteMetadata: {
-		title: "Amanda Barrafato's Portfolio",
+		title: "Amanda Barrafato",
+		description: "Amanda Barrafato's Portfolio",
+		author: "Amanda Barrafato",
 	},
 	plugins: [
 		"gatsby-plugin-sharp",
@@ -8,6 +10,12 @@ module.exports = {
 		{
 			resolve: "gatsby-plugin-manifest",
 			options: {
+				name: "Amanda Barrafato's portfolio",
+				short_name: "Amanda",
+				start_url: "/",
+				background_color: "white",
+				theme_color: "#6b37bf",
+				display: "standalone",
 				icon: "src/images/icon.png",
 			},
 		},
