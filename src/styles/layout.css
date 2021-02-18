@@ -55,6 +55,14 @@ body.dark {
 	--hoverColor: rgb(212, 179, 240);
 }
 
+img {
+	animation: fadeIn ease 0.5s;
+	-webkit-animation: fadeIn ease 0.5s;
+	-moz-animation: fadeIn ease 0.5s;
+	-o-animation: fadeIn ease 0.5s;
+	-ms-animation: fadeIn ease 0.5s;
+}
+
 .flex {
 	display: flex;
 	flex-wrap: wrap;
@@ -121,15 +129,19 @@ a {
 }
 
 .amanda:hover {
+	background-color: var(--secondary);
 	background-image: linear-gradient(120deg, var(--primary), var(--secondary));
-	background-repeat: no-repeat;
 	background-size: 100% 0.2em;
 	background-position: 0 88%;
 	transition: background-size 2s ease-in;
 	background-repeat: repeat;
 	-webkit-background-clip: text;
 	background-clip: text;
+	backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
 	-webkit-text-fill-color: transparent;
+	transform: none;
+	-webkit-transform: translate3d(0, 0, 0);
 }
 
 h1,
@@ -158,7 +170,7 @@ h6 {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	flex: 1 1;
+	flex: 1 1 auto;
 	padding: 2rem 2rem;
 	flex-basis: 60%;
 }
@@ -470,6 +482,52 @@ body.light .gg-sun {
 
 .gg-moon:hover {
 	color: var(--headerColor);
+}
+
+/* Animation */
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@-moz-keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@-o-keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@-ms-keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }
 
 /* Media Queries */
