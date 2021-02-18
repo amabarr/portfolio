@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Layout, SEO, AboutMe } from "../components";
 
-const IndexPage = () => (
+const Index = () => (
 	<>
 		<Layout>
 			<SEO title='Home' />
@@ -12,4 +12,4 @@ const IndexPage = () => (
 	</>
 );
 
-export default IndexPage;
+export default Index;
