@@ -12,8 +12,8 @@ export default ({ data, image }) => {
 				<p>{data.description}</p>
 			</div>
 
-			<div className='project-links'>
-				<a href={data.gitHub} className='project-git'>
+			<div className='project-links icon'>
+				<a href={data.gitHub} className='project-links-icon'>
 					<FontAwesomeIcon icon={faGithub} />
 				</a>
 				<a href={data.deployedURL} className='underline'>

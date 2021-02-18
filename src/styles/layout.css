@@ -2,7 +2,6 @@
 	box-sizing: border-box;
 }
 
-/* Gatbsy fixes */
 body,
 #___gatsby {
 	height: 100vh;
@@ -43,7 +42,7 @@ body.dark {
 	--bg: #121212;
 	--textNormal: white;
 	--textSecondary: #b3b3b3;
-	--textDecor: white;
+	--textDecor: rgb(189, 160, 235);
 	--textTitle: white;
 	--textLink: white;
 	--borderColor: white;
@@ -100,6 +99,7 @@ a {
 }
 
 .underline {
+	color: var(--textLink);
 	background-image: linear-gradient(120deg, var(--primary), var(--secondary));
 	background-repeat: no-repeat;
 	text-transform: uppercase;
@@ -222,7 +222,7 @@ p {
 
 .skillsList {
 	justify-content: space-evenly;
-	width: 65%;
+	width: 85%;
 }
 
 .skills {
@@ -295,13 +295,15 @@ p {
 /* Music Section */
 
 .music {
-	flex-direction: column;
-	flex: 0 1;
+	flex-direction: row;
+	flex: 0 1 auto;
 	align-content: center;
-	width: 100%;
+	width: 80vw;
+	justify-content: center;
 }
 
 .musicPlayers {
+	flex: 1 0 auto;
 	flex-direction: column;
 }
 
@@ -339,6 +341,21 @@ p {
 .project-links {
 	width: 100%;
 	justify-content: space-evenly;
+	align-items: center;
+}
+
+.project-links a {
+	color: var(--textDecor);
+	transition: all 0.25s;
+}
+
+.project-links a:hover {
+	transform: scale(1.2);
+	color: var(--hoverColor);
+}
+
+.project-links-icon {
+	font-size: x-large;
 }
 
 .screenshot {
@@ -456,7 +473,7 @@ body.light .gg-sun {
 }
 
 /* Media Queries */
-@media (max-width: 600px) {
+@media (max-width: 700px) {
 	.banner {
 		width: 20rem;
 	}
@@ -467,6 +484,10 @@ body.light .gg-sun {
 
 	.amanda {
 		font-size: 2.75rem;
+	}
+
+	.music img {
+		width: 100%;
 	}
 
 	footer {
@@ -481,8 +502,14 @@ body.light .gg-sun {
 
 	.projects-list {
 		flex-direction: column;
-		justify-content: space-around;
-		justify-items: space-evenly;
+	}
+
+	.project-des {
+		height: auto;
+	}
+
+	.project {
+		margin: 0.5rem;
 	}
 
 	.about {

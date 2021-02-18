@@ -7,5 +7,4 @@ export { default as ThemeSelector } from "./themeSelector";
 export { default as Header } from "./header";
 export { default as FooterLinks } from "./footerLinks";
 export { default as ContactForm } from "./contactForm";
-
 export { default as ProjectsList } from "./projects/projectsList";

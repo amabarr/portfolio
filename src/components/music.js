@@ -3,8 +3,8 @@ import explorer from "../images/explorer.jpg";
 
 export default () => (
 	<div className='music flex'>
-		<img src={explorer} alt='Amanda playing guitar' className='banner' />
-		<div className='musicPlayers'>
+		<img src={explorer} alt='Amanda playing guitar' />
+		<div className='musicPlayers flex'>
 			<iframe
 				style={{ border: "0" }}
 				title='Out Past Curfew'

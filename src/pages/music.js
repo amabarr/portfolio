@@ -5,9 +5,7 @@ const music = () => (
 	<>
 		<Layout>
 			<SEO title='Music' />
-			<div className='musicPage flex'>
-				<Music />
-			</div>
+			<Music />
 		</Layout>
 	</>
 );

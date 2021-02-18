@@ -10,8 +10,6 @@ const Header = () => (
 			</Link>
 		</div>
 		<div className='links flex'>
-			{/* I want these to hamburger */}
-
 			<Link to='/projects' className='underline'>
 				PROJECTS
 			</Link>
