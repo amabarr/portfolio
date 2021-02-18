@@ -6,4 +6,4 @@ export { default as Header } from "./header";
 export { default as FooterLinks } from "./footerLinks";
 export { default as ContactForm } from "./contactForm";
 export { default as ProjectsList } from "./projects/projectsList";
-export { default as SEO } from "./seo";
+export { default as SEO } from "./SEO";
