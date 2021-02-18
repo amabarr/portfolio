@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Layout, ProjectsList, SEO } from "../components/index";
+import { Layout, ProjectsList, SEO } from "../components";
 
 const projects = () => (
 	<>
