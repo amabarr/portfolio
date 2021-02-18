@@ -1,5 +1,5 @@
 import React from "react";
-import { FooterLinks, Header } from "./";
+import { FooterLinks, Header } from ".";
 import "../styles/layout.css";
 
 const Layout = ({ children }) => {

@@ -1,0 +1,28 @@
+{
+	"projects": [
+		{
+			"name": "Exquisite Corpse",
+			"description": "A real-time collaborative online drawing game with social features.",
+			"gitHub": "https://github.com/the-exquisite-game/exquisite-corpse",
+			"deployedURL": "https://xquisitecorpse.herokuapp.com/",
+			"image": "ExquisiteCorpse",
+			"alt": "A purple Frankenstein"
+		},
+		{
+			"name": "Synesthesia",
+			"description": "An FFT Plot app made with React, Three.js and the Web Audio API from Javascript.",
+			"gitHub": "https://github.com/amabarr/FFT_plot",
+			"deployedURL": "https://synthesia.herokuapp.com/",
+			"image": "synth",
+			"alt": "The FFT Plot"
+		},
+		{
+			"name": "Grace-Cropper",
+			"description": "A e-commerce site for Crop Tops, Crops, and Cropped Pictures with auth, filtering, stripe, and cart features for easy checkout",
+			"gitHub": "https://github.com/gracecropper/gracecropper",
+			"deployedURL": "https://grace-cropper.herokuapp.com/",
+			"image": "GraceCropper",
+			"alt": "The e-commerce website"
+		}
+	]
+}

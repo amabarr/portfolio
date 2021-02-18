@@ -1,11 +1,11 @@
 import * as React from "react";
-import { Layout, SEO } from "../components";
+import { Layout, ProjectsList, SEO } from "../components/index";
 
 const projects = () => (
 	<>
 		<Layout>
 			<SEO title='Projects' />
-			<h2> YO, here are my projects check them out </h2>
+			<ProjectsList />
 		</Layout>
 	</>
 );
