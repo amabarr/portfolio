@@ -9,14 +9,15 @@ body,
 
 #gatsby-focus-wrapper {
 	display: flex;
+	display: -webkit-flex;
 	flex-direction: column;
-	height: 100%;
+	min-height: 100vh;
 }
 
 body {
 	margin: 0;
-	min-height: 100vh;
 	display: flex;
+	display: -webkit-flex;
 	flex-direction: column;
 	font-family: "Fira Code", monospace;
 
@@ -66,6 +67,10 @@ img {
 .flex {
 	display: flex;
 	flex-wrap: wrap;
+
+	/* Safari */
+	display: -webkit-flex;
+	-webkit-flex-wrap: wrap;
 }
 
 /* Header */
@@ -89,6 +94,7 @@ a {
 	justify-content: space-around;
 	width: 60%;
 	flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
 }
 
 .iconLinks {
@@ -129,6 +135,7 @@ a {
 }
 
 .amanda:hover {
+	display: inline-block;
 	background-color: var(--secondary);
 	background-image: linear-gradient(120deg, var(--primary), var(--secondary));
 	background-size: 100% 0.2em;
@@ -168,6 +175,7 @@ h6 {
 /* Main */
 .main {
 	flex-direction: column;
+	-webkit-flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	flex: 1 1 auto;
@@ -186,6 +194,7 @@ h6 {
 	width: 100%;
 	display: flex;
 	flex-direction: column;
+	-webkit-flex-direction: column;
 	justify-content: center;
 	flex: 1 0;
 }
@@ -202,6 +211,7 @@ h6 {
 
 .aboutMe {
 	flex-direction: row;
+	-webkit-flex-direction: column;
 	align-content: center;
 	justify-content: center;
 	align-items: center;
@@ -226,6 +236,7 @@ p {
 /* Resume */
 .resumeArea {
 	flex-direction: column;
+	-webkit-flex-direction: column;
 	align-content: center;
 	justify-content: space-around;
 	height: 85%;
@@ -243,6 +254,7 @@ p {
 	padding: 1rem;
 	border-radius: 15px;
 	flex-direction: column;
+	-webkit-flex-direction: column;
 	flex: 1 1 auto;
 	border: 5px solid var(--primary);
 }
@@ -250,18 +262,17 @@ p {
 /* Contact Form */
 
 .contactForm {
-	display: flex;
 	margin-top: 4rem;
 	justify-content: center;
 	align-content: center;
-	width: 100%;
-	height: 100%;
+	flex: 1 1 auto;
+	/* width: 30rem; */
 }
+
 .contact {
 	display: flex;
 	flex-direction: column;
-	height: 100%;
-	width: 30rem;
+	-webkit-flex-direction: column;
 }
 
 ::placeholder {
@@ -308,6 +319,7 @@ p {
 
 .music {
 	flex-direction: row;
+	-webkit-flex-direction: row;
 	flex: 0 1 auto;
 	align-content: center;
 	width: 80vw;
@@ -315,8 +327,10 @@ p {
 }
 
 .musicPlayers {
-	flex: 1 0 auto;
+	flex: 0 1 50%;
 	flex-direction: column;
+	-webkit-flex-direction: column;
+	justify-content: center;
 }
 
 .event img {
@@ -329,6 +343,8 @@ p {
 	flex: 0 1 auto;
 	align-items: center;
 	justify-content: space-evenly;
+
+	-webkit-flex-wrap: wrap;
 }
 
 .project-git {
@@ -344,6 +360,7 @@ p {
 
 .project-des {
 	flex-direction: column;
+	-webkit-flex-direction: column;
 	align-items: center;
 	justify-content: flex-start;
 	padding: 1rem;
@@ -531,7 +548,26 @@ body.light .gg-sun {
 }
 
 /* Media Queries */
-@media (max-width: 700px) {
+
+/* larger screens */
+@media screen and (min-width: 700px) {
+	.contactForm input,
+	.contactForm textarea {
+		width: 40rem;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.main {
+		padding: 1.5rem 1.5rem;
+	}
+
+	.contactForm,
+	.contactForm input,
+	.contactForm textarea {
+		width: 25rem;
+	}
+
 	.banner {
 		width: 20rem;
 	}
@@ -554,12 +590,14 @@ body.light .gg-sun {
 
 	.aboutMe {
 		flex-direction: column;
+		-webkit-flex-direction: column;
 		justify-content: space-around;
 		justify-items: flex-start;
 	}
 
 	.projects-list {
 		flex-direction: column;
+		-webkit-flex-direction: column;
 	}
 
 	.project-des {
@@ -576,8 +614,33 @@ body.light .gg-sun {
 	}
 }
 
-@media (max-height: 850px) {
+@media screen and (max-height: 850px) {
 	.contactForm {
 		margin-top: 0px;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.contactForm,
+	.contactForm input,
+	.contactForm textarea {
+		width: 20rem;
+	}
+}
+
+@media screen and (max-width: 360px) {
+	.contactForm,
+	.contactForm input,
+	.contactForm textarea {
+		width: 15rem;
+	}
+
+	.selfPortait {
+		width: 15rem;
+		height: 15rem;
+	}
+
+	.screenshot {
+		height: 8rem;
 	}
 }
