@@ -391,6 +391,21 @@ p {
 	height: 10rem;
 }
 
+/* Error Page */
+.error-title {
+	font-size: 8rem;
+}
+
+.error h2 {
+	font-size: 2rem;
+}
+
+.error {
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+}
+
 /* Footer */
 
 footer {
