@@ -5,7 +5,12 @@ import Resume from "../data/Amanda_Barrafato_Resume.pdf";
 const AboutMe = () => {
 	return (
 		<div className='aboutMe'>
-			<img src={selfPortrait} alt='Amanda' className='selfPortait' />
+			<img
+				src={selfPortrait}
+				alt='Amanda'
+				loading='lazy'
+				className='selfPortait'
+			/>
 			<div className='about'>
 				<h2>Hi, I'm Amanda</h2>
 				<span>

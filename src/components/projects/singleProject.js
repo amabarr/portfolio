@@ -5,7 +5,7 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 export default ({ data, image }) => {
 	return (
 		<div className='project flex'>
-			<img src={image} alt={data.alt} className='screenshot' />
+			<img src={image} alt={data.alt} loading='lazy' className='screenshot' />
 
 			<div className='project-des'>
 				<h3>{data.name}</h3>

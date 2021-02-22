@@ -1,9 +1,9 @@
 import React from "react";
 import JSONData from "../../content/projects.json";
 import SingleProject from "./singleProject";
-import synth from "../../images/synth.png";
-import GraceCropper from "../../images/GraceCropper.png";
-import ExquisiteCorpse from "../../images/ExquisiteCorpse.png";
+import synth from "../../images/synth.jpg";
+import GraceCropper from "../../images/GraceCropper.jpg";
+import ExquisiteCorpse from "../../images/ExquisiteCorpse.jpg";
 
 const ProjectsList = () => {
 	const image = {
