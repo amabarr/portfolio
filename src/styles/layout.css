@@ -32,6 +32,7 @@ body {
 	--secondary: #c8bfff;
 	--cardColor: white;
 	--formColor: white;
+	--hr: var(--headerColor);
 	--hoverColor: #c8bfff;
 
 	background-color: var(--bg);
@@ -187,6 +188,11 @@ h6 {
 	display: flex;
 }
 
+hr {
+	color: var(--hr);
+	width: 100%;
+}
+
 /* About me section*/
 
 #index {
@@ -245,7 +251,7 @@ p {
 
 .skillsList {
 	justify-content: space-evenly;
-	width: 85%;
+	width: 75%;
 }
 
 .skills {
@@ -338,24 +344,33 @@ p {
 }
 
 /* Projects */
+ul {
+	margin: 0px;
+	list-style: none;
+	padding: 0px;
+}
+
 .projects-list {
+	width: 100%;
+	height: 100%;
+	flex-direction: column;
 	flex-wrap: wrap;
 	flex: 0 1 auto;
 	align-items: center;
-	justify-content: space-evenly;
-
-	-webkit-flex-wrap: wrap;
+	justify-content: space-between;
 }
 
+.projects-list img {
+	width: 18rem;
+}
 .project-git {
 	font-size: large;
 }
 
 .project {
+	flex-direction: row;
 	align-items: center;
 	justify-content: center;
-	flex: 0 1 33%;
-	height: 25rem;
 }
 
 .project-des {
@@ -364,7 +379,7 @@ p {
 	align-items: center;
 	justify-content: flex-start;
 	padding: 1rem;
-	height: 10rem;
+	width: 75%;
 }
 
 .project-links {
@@ -389,6 +404,24 @@ p {
 
 .screenshot {
 	height: 10rem;
+	width: 17rem;
+}
+
+.project-buttons {
+	width: 100%;
+	height: 2rem;
+}
+
+.project-selector {
+	color: var(--textNormal);
+	background-color: var(--cardColor);
+	width: 25%;
+	border: none;
+	outline: none;
+}
+
+.selected {
+	background-color: var(--secondary);
 }
 
 /* Error Page */
@@ -610,6 +643,8 @@ body.light .gg-sun {
 		justify-items: flex-start;
 	}
 
+	/* Projects */
+
 	.projects-list {
 		flex-direction: column;
 		-webkit-flex-direction: column;
@@ -657,5 +692,6 @@ body.light .gg-sun {
 
 	.screenshot {
 		height: 8rem;
+		width: 15rem;
 	}
 }
