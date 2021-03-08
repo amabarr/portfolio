@@ -5,20 +5,27 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 export default ({ data, image }) => {
 	return (
 		<div className='project flex'>
-			<img src={image} alt={data.alt} loading='lazy' className='screenshot' />
-
-			<div className='project-des'>
-				<h3>{data.name}</h3>
-				<p>{data.description}</p>
+			<div className='project-image'>
+				<img src={image} alt={data.alt} loading='lazy' className='screenshot' />
 			</div>
+			<div className='project-des hidden'>
+				<h3>{data.name}</h3>
+				<hr />
+				<h5>Description:</h5>
+				{data.description}
+				<h5>Overview:</h5>
+				{data.overview}
+				<h5>Tech stack:</h5>
+				{data.technology}
 
-			<div className='project-links icon'>
-				<a href={data.gitHub} className='project-links-icon'>
-					<FontAwesomeIcon icon={faGithub} />
-				</a>
-				<a href={data.deployedURL} className='underline'>
-					Visit
-				</a>
+				<div className='project-links icon'>
+					<a href={data.gitHub} className='project-links-icon'>
+						<FontAwesomeIcon icon={faGithub} />
+					</a>
+					<a href={data.deployedURL} className='underline'>
+						Visit
+					</a>
+				</div>
 			</div>
 		</div>
 	);

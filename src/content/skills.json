@@ -1,9 +1,23 @@
 {
-  "Frontend": ["React", "Redux", "Gatsby", "HTML", "CSS"],
-  "Backend": ["Node.js", "Sequelize", "SQL", "PostgresSQL", "Axios", "Express"],
-  "Languages": ["Javascript", "C++"],
-  "Testing": ["Mocha", "Chai", "Jasmine"],
-  "Audio": ["Arduino", "Guitar", "Pro Tools", "Digital and Analog audio consoles (Midas, Yamaha, DigiCo)" , "Max/MSP", "Ableton Live", "Garageband"],
-  "Other": ["ATEM Video Switcher", "ClearCom", "Heroku", "Netlify", "GitHub Pages"]
+	"Frontend": ["React", "Redux", "Gatsby", "HTML", "CSS"],
+	"Backend": ["Node.js", "Sequelize", "SQL", "PostgresSQL", "Axios", "Express"],
+	"Languages": ["Javascript", "C++"],
+	"Testing": ["Mocha", "Chai", "Jasmine"],
+	"Audio": [
+		"Arduino",
+		"Guitar",
+		"Pro Tools",
+		"Digital audio consoles",
+		"Analog audio consoles",
+		"Max/MSP",
+		"Ableton Live",
+		"Garageband"
+	],
+	"Other": [
+		"ATEM Video Switcher",
+		"ClearCom",
+		"Heroku",
+		"Netlify",
+		"GitHub Pages"
+	]
 }
-
