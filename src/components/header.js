@@ -5,7 +5,7 @@ import ThemeSelector from "./themeSelector";
 const Header = () => (
 	<>
 		<div id='name'>
-			<Link to='/' className='amanda'>
+			<Link to='/' id='amanda'>
 				Amanda Barrafato
 			</Link>
 		</div>
