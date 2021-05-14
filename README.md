@@ -18,4 +18,4 @@ See it live at: https://www.amanda.dev/
 
 # Contact Me
 
-To get in touch with me, please email amanda@amanda.dev or contact me on my LinkedIn at https://www.linkedin.com/in/amanda-barrafato/
+To get in touch with me, please email abarrafato@gmail.com or contact me on my LinkedIn at https://www.linkedin.com/in/amanda-barrafato/
