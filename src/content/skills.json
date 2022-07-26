@@ -1,7 +1,7 @@
 {
-	"Frontend": ["React", "Redux", "Gatsby", "HTML", "CSS"],
+	"Frontend": ["React", "Redux", "Gatsby", "HTML", "CSS", "Styled Components"],
 	"Backend": ["Node.js", "Sequelize", "SQL", "PostgresSQL", "Axios", "Express"],
-	"Languages": ["Javascript", "C++"],
+	"Languages": ["Typescript", "Javascript", "C++"],
 	"Testing": ["Mocha", "Chai", "Jasmine"],
 	"Audio": [
 		"Arduino",
@@ -10,8 +10,7 @@
 		"Digital audio consoles",
 		"Analog audio consoles",
 		"Max/MSP",
-		"Ableton Live",
-		"Garageband"
+		"Ableton Live"
 	],
 	"Other": [
 		"ATEM Video Switcher",
