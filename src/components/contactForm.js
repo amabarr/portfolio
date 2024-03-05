@@ -1,6 +1,6 @@
 import React from "react";
 
-export default () => {
+export const ContactForm = () => {
 	return (
 		<div className='contactForm'>
 			<form
@@ -11,12 +11,18 @@ export default () => {
 				className='contact'
 			>
 				<input type='hidden' name='form-name' value='contact' />
-				<input type='text' name='name' placeholder='Your Name Here' />
-				<input type='email' name='email' placeholder='email@email.com' />
+				<input type='text' name='name' placeholder='Your Name Here' required />
+				<input
+					type='email'
+					name='email'
+					placeholder='email@email.com'
+					required
+				/>
 				<textarea
 					name='message'
 					placeholder='Here is my message to you.'
-				></textarea>
+					required
+				/>
 				<button type='submit'>Send</button>
 			</form>
 		</div>
