@@ -6,7 +6,7 @@ const Layout = ({ children }) => {
 	return (
 		<>
 			<header className='flex'>
-				<Header id='desktop-nav' />
+				<Header />
 			</header>
 			<main className='main flex'>{children}</main>
 			<footer className='flex'>

@@ -22,8 +22,8 @@ const Header = () => (
 			<Link to='/contact' className='underline'>
 				CONTACT ME
 			</Link>
-
-			<ThemeSelector />
+{/*  TODO: reimplement dark mode
+			<ThemeSelector /> */}
 		</div>
 	</>
 );

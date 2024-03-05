@@ -1,5 +1,6 @@
 import * as React from "react";
-import { Layout, ContactForm, SEO } from "../components";
+import { Layout, SEO } from "../components";
+import { ContactForm } from "../components/contactForm";
 
 const Contact = () => (
 	<Layout>
@@ -7,4 +8,5 @@ const Contact = () => (
 		<ContactForm />
 	</Layout>
 );
+
 export default Contact;
