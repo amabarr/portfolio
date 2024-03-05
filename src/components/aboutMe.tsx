@@ -1,12 +1,12 @@
 import React from "react";
-// import selfPortrait from "../images/me.jpg";
-// import Resume from "../data/Amanda_Barrafato_Resume.pdf";
+import selfPortrait from "../images/me.jpg";
+import Resume from "../data/Amanda_Barrafato_Resume.pdf";
 
 const AboutMe = () => {
 	return (
 		<div className='aboutMe'>
 			<img
-				// src={selfPortrait}
+				src={selfPortrait}
 				alt='Amanda'
 				loading='lazy'
 				className='selfPortait'
@@ -32,11 +32,10 @@ const AboutMe = () => {
 					</p>
 				</span>
 
-				{/* TODO: readd my resume
 
 				<a href={Resume} className='underline'>
 					Download My Resume
-				</a> */}
+				</a>
 			</div>
 		</div>
 	);

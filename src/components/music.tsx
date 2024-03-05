@@ -1,9 +1,9 @@
 import React from "react";
-// import explorer from "../images/explorer.jpg";
+import explorer from "../images/explorer.jpg";
 
 export default () => (
 	<div className='music flex'>
-		{/* <img src={explorer} alt='Amanda playing guitar' loading='lazy' /> */}
+		<img src={explorer} alt='Amanda playing guitar' loading='lazy' />
 		<div className='musicPlayers flex'>
 			<iframe
 				style={{ border: "0" }}

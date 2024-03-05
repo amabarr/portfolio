@@ -19,7 +19,7 @@ export const Skills: React.FC = () => (
 			})}
 		</div>
 
-		<a href={""} className='underline links'>
+		<a href={Resume} className='underline links'>
 			download my resume
 		</a>
 	</div>
