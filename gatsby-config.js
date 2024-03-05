@@ -39,7 +39,6 @@ module.exports = {
 			},
 			__key: "images",
 		},
-		"gatsby-plugin-dark-mode",
 		{
 			resolve: "gatsby-plugin-webfonts",
 			options: {
