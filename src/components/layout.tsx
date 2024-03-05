@@ -2,7 +2,7 @@ import React from "react";
 import { FooterLinks, Header } from ".";
 import "../styles/layout.css";
 
-const Layout = ({ children }) => {
+const Layout: React.FC<React.PropsWithChildren>= ({ children }) => {
 	return (
 		<>
 			<header className='flex'>

@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "es2016",
+    "jsx": "react",
+    "module": "commonjs",
+    "allowJs": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,                                      /* Enable all strict type-checking options. */
+    "noImplicitAny": true,                            /* Enable error reporting for expressions and declarations with an implied 'any' type. */
+    "strictNullChecks": true,                         /* When type checking, take into account 'null' and 'undefined'. */
+    "noUnusedLocals": true,                           /* Enable error reporting when local variables aren't read. */
+    "noImplicitOverride": true,                       /* Ensure overriding members in derived classes are marked with an override modifier. */
+    "skipLibCheck": true                                 /* Skip type checking all .d.ts files. */
+  }
+}

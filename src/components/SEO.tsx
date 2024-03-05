@@ -1,9 +1,14 @@
 import React from "react";
-import PropTypes from "prop-types";
 import { Helmet } from "react-helmet";
 import { useStaticQuery, graphql } from "gatsby";
 
-function SEO({ title, description, lang, meta }) {
+interface SEOProps {
+	title: string
+	description?: string,
+	lang?: string,
+}
+
+function SEO({ title, description = "", lang = "en" }: SEOProps) {
 	const { site } = useStaticQuery(
 		graphql`
 			query {
@@ -17,7 +22,6 @@ function SEO({ title, description, lang, meta }) {
 			}
 		`
 	);
-
 	const metaDescription = description || site.siteMetadata.description;
 	const defaultTitle = site.siteMetadata.title;
 
@@ -27,7 +31,7 @@ function SEO({ title, description, lang, meta }) {
 				lang,
 			}}
 			title={title}
-			titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : null}
+			titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : undefined}
 			meta={[
 				{
 					name: `description`,
@@ -45,22 +49,9 @@ function SEO({ title, description, lang, meta }) {
 					property: `og:type`,
 					content: `website`,
 				},
-			].concat(meta)}
+			]}
 		/>
 	);
 }
-
-SEO.defaultProps = {
-	lang: "en",
-	description: "",
-	meta: [],
-};
-
-SEO.propTypes = {
-	title: PropTypes.string,
-	description: PropTypes.string,
-	lang: PropTypes.string,
-	meta: PropTypes.arrayOf(PropTypes.object),
-};
 
 export default SEO;

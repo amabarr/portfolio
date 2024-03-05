@@ -10,9 +10,6 @@ const Header = () => (
 			</Link>
 		</div>
 		<div className='links flex'>
-			<Link to='/projects' className='underline'>
-				PROJECTS
-			</Link>
 			<Link to='/music' className='underline'>
 				MUSIC
 			</Link>
