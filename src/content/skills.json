@@ -1,22 +1,15 @@
 {
-	"Frontend": ["React", "Redux", "Gatsby", "HTML", "CSS", "Styled Components"],
-	"Backend": ["Node.js", "Sequelize", "SQL", "PostgresSQL", "Axios", "Express"],
-	"Languages": ["Typescript", "Javascript", "C++"],
-	"Testing": ["Mocha", "Chai", "Jasmine"],
-	"Audio": [
-		"Arduino",
-		"Guitar",
-		"Pro Tools",
-		"Digital audio consoles",
-		"Analog audio consoles",
-		"Max/MSP",
-		"Ableton Live"
+	"Frontend": [
+		"React",
+		"Redux",
+		"Next.js",
+		"Gatsby",
+		"HTML",
+		"CSS",
+		"Styled Components"
 	],
-	"Other": [
-		"ATEM Video Switcher",
-		"ClearCom",
-		"Heroku",
-		"Netlify",
-		"GitHub Pages"
-	]
+	"Backend": ["Node.js", "Sequelize", "SQL", "PostgresSQL", "Axios", "Express"],
+	"Languages": ["TypeScript", "Javascript", "Ruby", "C++"],
+	"Testing": ["Jest", "Rspec", "Mocha", "Chai", "Jasmine"],
+	"Other": ["GraphQL", "Heroku", "Netlify", "GitHub Pages"]
 }

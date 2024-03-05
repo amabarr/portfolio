@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
-import ThemeSelector from "./themeSelector";
+import { ThemeSelector } from "./themeSelector";
 
 const Header = () => (
 	<>
