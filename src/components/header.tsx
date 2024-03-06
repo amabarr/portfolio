@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
-import ThemeSelector from "./themeSelector";
+import { ThemeSelector } from "./themeSelector";
 
 const Header = () => (
 	<>
@@ -10,8 +10,8 @@ const Header = () => (
 			</Link>
 		</div>
 		<div className='links flex'>
-			<Link to='/projects' className='underline'>
-				PROJECTS
+			<Link to='/' className='underline'>
+				HOME
 			</Link>
 			<Link to='/music' className='underline'>
 				MUSIC
@@ -22,7 +22,6 @@ const Header = () => (
 			<Link to='/contact' className='underline'>
 				CONTACT ME
 			</Link>
-
 			<ThemeSelector />
 		</div>
 	</>

@@ -17,7 +17,6 @@ module.exports = {
 	},
 	plugins: [
 		"gatsby-plugin-sharp",
-		"gatsby-plugin-react-helmet",
 		{
 			resolve: "gatsby-plugin-manifest",
 			options: {
@@ -39,7 +38,6 @@ module.exports = {
 			},
 			__key: "images",
 		},
-		"gatsby-plugin-dark-mode",
 		{
 			resolve: "gatsby-plugin-webfonts",
 			options: {

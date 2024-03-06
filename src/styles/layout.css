@@ -21,7 +21,7 @@ body {
 	flex-direction: column;
 	font-family: "Fira Code", monospace;
 
-	--bg: white;
+	 --bg: white;
 	--textNormal: black;
 	--textDecor: #a739c2;
 	--textTitle: black;
@@ -40,7 +40,7 @@ body {
 	color: var(--textNormal);
 }
 
-body.dark {
+.dark {
 	--webkit-font-smoothing: antialiased;
 	--bg: #121212;
 	--textNormal: white;
@@ -443,23 +443,6 @@ footer .links {
 
 footer img {
 	width: 2rem;
-}
-
-/* theme-selector */
-.theme-changer {
-	display: none;
-}
-
-body.dark .gg-moon {
-	display: none;
-}
-
-body.light .gg-sun {
-	display: none;
-}
-.theme-container {
-	width: 24px;
-	height: 24px;
 }
 
 /* icons for sun and moon */

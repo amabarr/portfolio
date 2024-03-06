@@ -1,45 +1,47 @@
 {
-  "name": "amanda-barrafatos-portfolio",
-  "version": "1.0.0",
-  "private": true,
-  "description": "Amanda Barrafato's Portfolio",
-  "author": "Amanda Barrafato",
-  "keywords": [
-    "gatsby"
-  ],
-  "scripts": {
-    "develop": "gatsby develop",
-    "start": "gatsby develop",
-    "build": "gatsby build",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean"
-  },
-  "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.34",
-    "@fortawesome/free-brands-svg-icons": "^5.15.2",
-    "@fortawesome/free-regular-svg-icons": "^5.15.2",
-    "@fortawesome/free-solid-svg-icons": "^5.15.2",
-    "@fortawesome/react-fontawesome": "^0.1.14",
-    "gatsby": "^2.26.1",
-    "gatsby-image": "^2.9.0",
-    "gatsby-plugin-fontawesome-css": "^1.0.0",
-    "gatsby-plugin-google-fonts": "^1.0.1",
-    "gatsby-plugin-manifest": "^2.10.0",
-    "gatsby-plugin-react-helmet": "^3.8.0",
-    "gatsby-plugin-robots-txt": "^1.5.5",
-    "gatsby-plugin-sharp": "^2.12.1",
-    "gatsby-plugin-webfonts": "^1.1.4",
-    "gatsby-remark-emojis": "^0.4.3",
-    "gatsby-source-filesystem": "^2.9.0",
-    "gatsby-transformer-remark": "^2.15.0",
-    "gatsby-transformer-sharp": "^2.10.1",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-helmet": "^6.1.0",
-    "react-switch": "^6.0.0"
-  },
-  "devDependencies": {
-    "gatsby-plugin-dark-mode": "^1.1.2",
-    "prettier": "2.2.1"
-  }
+	"name": "amanda-barrafatos-portfolio",
+	"version": "2.0.0",
+	"private": true,
+	"description": "Amanda Barrafato's Portfolio",
+	"author": "Amanda Barrafato",
+	"keywords": [
+		"gatsby"
+	],
+	"engines": {
+		"node": "18.19.1"
+	},
+	"scripts": {
+		"develop": "gatsby develop",
+		"start": "gatsby develop",
+		"build": "gatsby build",
+		"serve": "gatsby serve",
+		"clean": "gatsby clean"
+	},
+	"dependencies": {
+		"@fortawesome/fontawesome-free": "^6.5.1",
+		"@fortawesome/free-brands-svg-icons": "^6.5.1",
+		"@fortawesome/free-regular-svg-icons": "^6.5.1",
+		"@fortawesome/free-solid-svg-icons": "^6.5.1",
+		"@fortawesome/react-fontawesome": "^0.2.0",
+		"gatsby": "5.13.3",
+		"gatsby-plugin-fontawesome": "^1.3.1",
+		"gatsby-plugin-manifest": "^5.13.1",
+		"gatsby-plugin-robots-txt": "^1.7.1",
+		"gatsby-plugin-webfonts": "^2.3.2",
+		"gatsby-remark-emojis": "^0.4.3",
+		"gatsby-source-filesystem": "^5.13.1",
+		"gatsby-transformer-remark": "^6.13.1",
+		"gatsby-transformer-sharp": "^5.13.1",
+		"react": "^18.2.0",
+		"react-dom": "^18",
+		"usehooks-ts": "^2.16.0"
+	},
+	"devDependencies": {
+		"@types/node": "^20.11.24",
+		"@types/react": "^18.2.63",
+		"@types/react-dom": "^18.2.20",
+		"@types/react-helmet": "^6.1.11",
+		"prettier": "2.2.1",
+		"typescript": "^5.3.3"
+	}
 }
