@@ -28,6 +28,8 @@ export const SEO = ({
 
 	const { isDarkMode } = useDarkMode();
 
+	console.log("isDarkMode inside of SEO", isDarkMode);
+
 	return (
 		<>
 			<title>{seo.title} | Amanda Barrafato</title>
