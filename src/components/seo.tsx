@@ -1,6 +1,5 @@
 import React from "react";
 import { useSiteMetadata } from "../hooks/useSiteMetaData";
-import { COLOR_MODE_STORAGE_KEY } from "./ColorModeContext";
 import { useDarkMode } from "usehooks-ts";
 
 interface SEOProps {
