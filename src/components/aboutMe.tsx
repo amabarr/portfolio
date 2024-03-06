@@ -32,7 +32,6 @@ const AboutMe = () => {
 					</p>
 				</span>
 
-
 				<a href={Resume} className='underline'>
 					Download My Resume
 				</a>
