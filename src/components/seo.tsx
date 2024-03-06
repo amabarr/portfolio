@@ -1,27 +1,41 @@
 import React from "react";
 import { useSiteMetadata } from "../hooks/useSiteMetaData";
+import { COLOR_MODE_STORAGE_KEY } from "./ColorModeContext";
+import { useDarkMode } from "usehooks-ts";
 
 interface SEOProps {
-	title?: string
-	description?: string,
-	pathname?: string,
+	title?: string;
+	description?: string;
+	pathname?: string;
 }
 
-export const SEO = ({ title, description, pathname, children }: React.PropsWithChildren<SEOProps>) => {
-  const { title: defaultTitle, description: defaultDescription, siteUrl } = useSiteMetadata()
+export const SEO = ({
+	title,
+	description,
+	pathname,
+	children,
+}: React.PropsWithChildren<SEOProps>) => {
+	const {
+		title: defaultTitle,
+		description: defaultDescription,
+		siteUrl,
+	} = useSiteMetadata();
 
-  const seo = {
-    title: title || defaultTitle,
-    description: description || defaultDescription,
-    url: `${siteUrl}${pathname || ``}`,
-  }
+	const seo = {
+		title: title || defaultTitle,
+		description: description || defaultDescription,
+		url: `${siteUrl}${pathname || ``}`,
+	};
 
-  return (
-    <>
-      <title>{seo.title} | Amanda Barrafato</title>
-      <meta name="description" content={seo.description} />
-      <html lang="en" />
-      {children}
-    </>
-  )
-}
+	const { isDarkMode } = useDarkMode();
+
+	return (
+		<>
+			<title>{seo.title} | Amanda Barrafato</title>
+			<meta name='description' content={seo.description} />
+			<html lang='en' />
+			<body className={isDarkMode ? "dark" : "light"} />
+			{children}
+		</>
+	);
+};

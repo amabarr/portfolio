@@ -1,22 +1,24 @@
-import React from "react";
-// import { ThemeToggler } from "gatsby-plugin-dark-mode";
+import React, { useContext } from "react";
+import { ColorModeContext } from "./ColorModeContext";
 
-export const ThemeSelector = () => (
-	<div>Need to reimplement dark mode myself :(</div>
-	// <ThemeToggler>
-	// 	{({ theme, toggleTheme }) => (
-	// 		<label>
-	// 			<input
-	// 				type='checkbox'
-	// 				className='theme-changer'
-	// 				onChange={(e) => toggleTheme(e.target.checked ? "dark" : "light")}
-	// 				checked={theme === "dark"}
-	// 			/>{" "}
-	// 			<div className='theme-container'>
-	// 				<i className='gg-sun'></i>
-	// 				<i className='gg-moon'></i>
-	// 			</div>
-	// 		</label>
-	// 	)}
-	// </ThemeToggler>
-);
+export const ThemeSelector = () => {
+	const { colorMode, setColorMode } = useContext(ColorModeContext);
+
+	return (
+		<div aria-hidden>
+			{colorMode === "dark" ? (
+				<i
+					className='gg-sun'
+					onClick={() => setColorMode("light")}
+					aria-label='Set light mode'
+				/>
+			) : (
+				<i
+					className='gg-moon'
+					onClick={() => setColorMode("dark")}
+					aria-label='Set dark mode'
+				/>
+			)}
+		</div>
+	);
+};

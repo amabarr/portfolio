@@ -33,7 +33,8 @@
 		"gatsby-transformer-remark": "^6.13.1",
 		"gatsby-transformer-sharp": "^5.13.1",
 		"react": "^18.2.0",
-		"react-dom": "^18"
+		"react-dom": "^18",
+		"usehooks-ts": "^2.16.0"
 	},
 	"devDependencies": {
 		"@types/node": "^20.11.24",

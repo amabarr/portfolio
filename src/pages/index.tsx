@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 import { Layout, AboutMe, SEO } from "../components";
 
 const Index = () => (
@@ -13,6 +13,4 @@ const Index = () => (
 
 export default Index;
 
-export const Head = () => (
-	<SEO title="Home"/>
-)
+export const Head = () => <SEO title='Home' />;
