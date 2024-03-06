@@ -10,6 +10,6 @@ const Contact = () => (
 
 export default Contact;
 
-export const Head = () => {
+export const Head = () => (
 	<SEO title="Contact Me"/>
-}
+)

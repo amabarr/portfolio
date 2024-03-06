@@ -12,6 +12,6 @@ const music = () => (
 export default music;
 
 
-export const Head = () => {
+export const Head = () => (
 	<SEO title="Music"/>
-}
+)

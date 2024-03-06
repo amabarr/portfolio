@@ -6,4 +6,4 @@ export { default as Header } from "./header";
 export { default as FooterLinks } from "./footerLinks";
 export { ContactForm } from "./contactForm";
 
-export {SEO} from './seo1'
+export {SEO} from './seo'

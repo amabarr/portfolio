@@ -12,6 +12,6 @@ const SkillsPage = () => (
 export default SkillsPage;
 
 
-export const Head = () => {
+export const Head = () => (
 	<SEO title="Skills"/>
-}
+)

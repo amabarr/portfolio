@@ -18,8 +18,9 @@ export const SEO = ({ title, description, pathname, children }: React.PropsWithC
 
   return (
     <>
-      <title>{seo.title}</title>
+      <title>{seo.title} | Amanda Barrafato</title>
       <meta name="description" content={seo.description} />
+      <html lang="en" />
       {children}
     </>
   )

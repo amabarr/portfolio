@@ -8,7 +8,7 @@ const Layout: React.FC<React.PropsWithChildren>= ({ children }) => {
 			<header className='flex'>
 				<Header />
 			</header>
-			<main className='main flex'>{children}</main>
+			<main className='main flex' lang="en">{children}</main>
 			<footer className='flex'>
 				<FooterLinks />
 			</footer>
