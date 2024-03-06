@@ -1,9 +1,6 @@
-export { default as Layout } from "./layout";
-export { default as Music } from "./music";
-export { Skills } from "./resume";
-export { default as AboutMe } from "./aboutMe";
-export { default as Header } from "./header";
-export { default as FooterLinks } from "./footerLinks";
+export { AboutMe } from "./aboutMe";
 export { ContactForm } from "./contactForm";
-
-export {SEO} from './seo'
+export { Layout } from "./Layout";
+export { Music } from "./music";
+export { SEO } from "./seo";
+export { Skills } from "./resume";

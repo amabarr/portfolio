@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "gatsby";
-import { ThemeSelector } from "./themeSelector";
+import { ThemeSelector } from "./ColorModeSelector";
 
-const Header = () => (
+export const Header = () => (
 	<>
 		<div id='name'>
 			<Link to='/' id='amanda'>
@@ -26,5 +26,3 @@ const Header = () => (
 		</div>
 	</>
 );
-
-export default Header;

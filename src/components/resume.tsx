@@ -1,6 +1,7 @@
 import React from "react";
-import Resume from '../data/Amanda_Barrafato_Resume.pdf'
-import {SkillDataType, skillsData} from "../content/skills";
+
+import { SkillDataType, skillsData } from "../content/skills";
+import { DownloadResumeLink } from "./DownloadResumeLink";
 
 export const Skills: React.FC = () => (
 	<div className='resumeArea'>
@@ -19,9 +20,6 @@ export const Skills: React.FC = () => (
 			})}
 		</div>
 
-		<a href={Resume} className='underline links'>
-			download my resume
-		</a>
+		<DownloadResumeLink />
 	</div>
 );
-
