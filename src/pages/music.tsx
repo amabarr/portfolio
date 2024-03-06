@@ -4,10 +4,14 @@ import { Layout, Music, SEO } from "../components";
 const music = () => (
 	<>
 		<Layout>
-			<SEO title='Music' />
 			<Music />
 		</Layout>
 	</>
 );
 
 export default music;
+
+
+export const Head = () => {
+	<SEO title="Music"/>
+}

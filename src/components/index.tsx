@@ -5,4 +5,5 @@ export { default as AboutMe } from "./aboutMe";
 export { default as Header } from "./header";
 export { default as FooterLinks } from "./footerLinks";
 export { ContactForm } from "./contactForm";
-export { default as SEO } from "./SEO";
+
+export {SEO} from './seo1'

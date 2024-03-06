@@ -5,9 +5,13 @@ import { Skills } from "../components/resume";
 
 const SkillsPage = () => (
 	<Layout>
-		<SEO title='Skills' />
 		<Skills />
 	</Layout>
 );
 
 export default SkillsPage;
+
+
+export const Head = () => {
+	<SEO title="Skills"/>
+}

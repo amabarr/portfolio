@@ -4,9 +4,12 @@ import { ContactForm } from "../components/contactForm";
 
 const Contact = () => (
 	<Layout>
-		<SEO title='Contact Me' />
 		<ContactForm />
 	</Layout>
 );
 
 export default Contact;
+
+export const Head = () => {
+	<SEO title="Contact Me"/>
+}

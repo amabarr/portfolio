@@ -17,7 +17,6 @@ module.exports = {
 	},
 	plugins: [
 		"gatsby-plugin-sharp",
-		"gatsby-plugin-react-helmet",
 		{
 			resolve: "gatsby-plugin-manifest",
 			options: {
