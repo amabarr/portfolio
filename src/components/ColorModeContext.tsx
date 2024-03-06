@@ -16,13 +16,17 @@ export const ColorModeContext = React.createContext<ColorModeContextType>({
 export const ColorModeContextProvider: React.FC<React.PropsWithChildren> = ({
 	children,
 }) => {
-	const { isDarkMode, setTernaryDarkMode } = useTernaryDarkMode();
+	const { ternaryDarkMode, setTernaryDarkMode } = useTernaryDarkMode();
 
+	console.log("ternary dark mode", ternaryDarkMode);
 	return (
 		<ColorModeContext.Provider
 			value={{
-				colorMode: isDarkMode ? "dark" : "light",
-				setColorMode: setTernaryDarkMode,
+				colorMode: ternaryDarkMode === "dark" ? "dark" : "light",
+				setColorMode: (mode) => {
+					console.log("I AM CLICKING", mode);
+					return setTernaryDarkMode(mode);
+				},
 			}}
 		>
 			{children}

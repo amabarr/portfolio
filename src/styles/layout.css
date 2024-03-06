@@ -2,7 +2,7 @@
 	box-sizing: border-box;
 }
 
-body,
+/* body,
 #___gatsby {
 	height: 100vh;
 }
@@ -12,32 +12,34 @@ body,
 	display: -webkit-flex;
 	flex-direction: column;
 	min-height: 100vh;
-}
+} */
 
-body {
-	margin: 0;
-	display: flex;
-	display: -webkit-flex;
-	flex-direction: column;
-	font-family: "Fira Code", monospace;
+.layout {
+		min-height: 100vh;
+		min-width: 100vw;
+		margin: 0;
+			display: flex;
+			display: -webkit-flex;
+			flex-direction: column;
+			font-family: "Fira Code", monospace;
 
-	 --bg: white;
-	--textNormal: black;
-	--textDecor: #a739c2;
-	--textTitle: black;
-	--textLink: black;
-	--borderColor: black;
-	--headerColor: rgb(181, 134, 181);
-	--primary: rgb(181, 134, 181);
-	--secondary: #c8bfff;
-	--cardColor: rgb(247, 247, 247);
-	--formColor: white;
-	--hr: var(--headerColor);
-	--hoverColor: #c8bfff;
-	--shadowColor: #ced4da;
+			--bg: white;
+			--textNormal: black;
+			--textDecor: #a739c2;
+			--textTitle: black;
+			--textLink: black;
+			--borderColor: black;
+			--headerColor: rgb(181, 134, 181);
+			--primary: rgb(181, 134, 181);
+			--secondary: #c8bfff;
+			--cardColor: rgb(247, 247, 247);
+			--formColor: white;
+			--hr: var(--headerColor);
+			--hoverColor: #c8bfff;
+			--shadowColor: #ced4da;
 
-	background-color: var(--bg);
-	color: var(--textNormal);
+			background-color: var(--bg);
+			color: var(--textNormal);
 }
 
 .dark {

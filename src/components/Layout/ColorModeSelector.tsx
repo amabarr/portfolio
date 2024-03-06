@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { ColorModeContext } from "./ColorModeContext";
+import { ColorModeContext } from "../ColorModeContext";
 
 export const ThemeSelector = () => {
 	const { colorMode, setColorMode } = useContext(ColorModeContext);
@@ -15,7 +15,10 @@ export const ThemeSelector = () => {
 			) : (
 				<i
 					className='gg-moon'
-					onClick={() => setColorMode("dark")}
+					onClick={() => {
+						console.log("PRESSING THE BUTTON", colorMode);
+						return setColorMode("dark");
+					}}
 					aria-label='Set dark mode'
 				/>
 			)}
