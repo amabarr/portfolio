@@ -18,15 +18,11 @@ export const ColorModeContextProvider: React.FC<React.PropsWithChildren> = ({
 }) => {
 	const { ternaryDarkMode, setTernaryDarkMode } = useTernaryDarkMode();
 
-	console.log("ternary dark mode", ternaryDarkMode);
 	return (
 		<ColorModeContext.Provider
 			value={{
 				colorMode: ternaryDarkMode === "dark" ? "dark" : "light",
-				setColorMode: (mode) => {
-					console.log("I AM CLICKING", mode);
-					return setTernaryDarkMode(mode);
-				},
+				setColorMode: setTernaryDarkMode,
 			}}
 		>
 			{children}

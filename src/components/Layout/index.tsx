@@ -5,7 +5,7 @@ import {
 	ColorModeContext,
 	ColorModeContextProvider,
 } from "../ColorModeContext";
-import { Header } from "./header1";
+import { Header } from "./Header";
 import { FooterLinks } from "./FooterLinks";
 
 export const Layout: React.FC<React.PropsWithChildren> = ({ children }) => (
@@ -25,5 +25,3 @@ export const Layout: React.FC<React.PropsWithChildren> = ({ children }) => (
 		</ColorModeContext.Consumer>
 	</ColorModeContextProvider>
 );
-
-export default Layout;

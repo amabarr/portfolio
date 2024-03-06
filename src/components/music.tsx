@@ -2,8 +2,13 @@ import React from "react";
 import explorer from "../images/explorer.jpg";
 
 export default () => (
-	<div className='music flex'>
-		<img src={explorer} alt='Amanda playing guitar' loading='lazy' />
+	<div className='music'>
+		<img
+			src={explorer}
+			alt='Amanda playing guitar'
+			loading='lazy'
+			className='explorer'
+		/>
 		<div className='musicPlayers flex'>
 			<iframe
 				style={{ border: "0" }}
