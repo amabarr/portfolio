@@ -1,6 +1,6 @@
 import React from "react";
 import selfPortrait from "../images/me.jpg";
-import Resume from "../data/Amanda_Barrafato_Resume.pdf";
+import { DownloadResumeLink } from "./DownloadResumeLink";
 
 const AboutMe = () => {
 	return (
@@ -32,9 +32,7 @@ const AboutMe = () => {
 					</p>
 				</span>
 
-				<a href={Resume} className='underline'>
-					Download My Resume
-				</a>
+				<DownloadResumeLink />
 			</div>
 		</div>
 	);

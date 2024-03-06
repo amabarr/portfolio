@@ -1,5 +1,5 @@
 import React from "react";
-import { useDarkMode } from "usehooks-ts";
+import { useTernaryDarkMode } from "usehooks-ts";
 
 type ColorMode = "dark" | "light";
 
@@ -13,18 +13,16 @@ export const ColorModeContext = React.createContext<ColorModeContextType>({
 	setColorMode: () => null,
 });
 
-export const COLOR_MODE_STORAGE_KEY = "theme";
-
 export const ColorModeContextProvider: React.FC<React.PropsWithChildren> = ({
 	children,
 }) => {
-	const { isDarkMode, toggle } = useDarkMode();
+	const { isDarkMode, setTernaryDarkMode } = useTernaryDarkMode();
 
 	return (
 		<ColorModeContext.Provider
 			value={{
 				colorMode: isDarkMode ? "dark" : "light",
-				setColorMode: toggle,
+				setColorMode: setTernaryDarkMode,
 			}}
 		>
 			{children}

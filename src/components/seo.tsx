@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useMemo } from "react";
 import { useSiteMetadata } from "../hooks/useSiteMetaData";
-import { useDarkMode } from "usehooks-ts";
+import { useDarkMode, useTernaryDarkMode } from "usehooks-ts";
 
 interface SEOProps {
 	title?: string;
@@ -26,16 +26,18 @@ export const SEO = ({
 		url: `${siteUrl}${pathname || ``}`,
 	};
 
-	const { isDarkMode } = useDarkMode();
+	const { ternaryDarkMode } = useTernaryDarkMode();
 
-	console.log("isDarkMode inside of SEO", isDarkMode);
+	const mode = useMemo(() => (ternaryDarkMode === "dark" ? "dark" : "light"), [
+		ternaryDarkMode,
+	]);
 
 	return (
 		<>
 			<title>{seo.title} | Amanda Barrafato</title>
 			<meta name='description' content={seo.description} />
 			<html lang='en' />
-			<body className={isDarkMode ? "dark" : "light"} />
+			<body className={mode} />
 			{children}
 		</>
 	);
