@@ -1,7 +1,7 @@
 import React from "react";
 import explorer from "../images/explorer.jpg";
 
-export default () => (
+export const Music = () => (
 	<div className='music'>
 		<img
 			src={explorer}

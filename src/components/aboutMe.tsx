@@ -2,7 +2,7 @@ import React from "react";
 import selfPortrait from "../images/me.jpg";
 import { DownloadResumeLink } from "./DownloadResumeLink";
 
-const AboutMe = () => {
+export const AboutMe = () => {
 	return (
 		<div className='aboutMe'>
 			<img
@@ -37,5 +37,3 @@ const AboutMe = () => {
 		</div>
 	);
 };
-
-export default AboutMe;
