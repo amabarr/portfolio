@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "gatsby";
-import { ThemeSelector } from "./ColorModeSelector";
+import { ThemeSelector } from "../themeSelector";
 
 export const Header = () => (
-	<>
+	<header className='flex'>
 		<div id='name'>
 			<Link to='/' id='amanda'>
 				Amanda Barrafato
@@ -24,5 +24,5 @@ export const Header = () => (
 			</Link>
 			<ThemeSelector />
 		</div>
-	</>
+	</header>
 );
