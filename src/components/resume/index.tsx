@@ -1,7 +1,7 @@
 import React from "react";
 
-import { SkillDataType, skillsData } from "../content/skills";
-import { DownloadResumeLink } from "./DownloadResumeLink";
+import { SkillDataType, skillsData } from "../../content/skills";
+import { DownloadResumeLink } from "./downloadResumeLink";
 
 export const Skills: React.FC = () => (
 	<div className='resumeArea'>

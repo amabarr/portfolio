@@ -6,20 +6,16 @@ import {
 	ColorModeContextProvider,
 } from "../ColorModeContext";
 import { Header } from "./Header";
-import { FooterLinks } from "./FooterLinks";
+import { Footer } from "./Footer";
 
 export const Layout: React.FC<React.PropsWithChildren> = ({ children }) => (
 	<ColorModeContextProvider>
 		<ColorModeContext.Consumer>
 			{({ colorMode }) => (
 				<div className={colorMode === "dark" ? "dark layout" : "light layout"}>
-					<header className='flex'>
-						<Header />
-					</header>
+					<Header />
 					<main className='main flex'>{children}</main>
-					<footer className='flex'>
-						<FooterLinks />
-					</footer>
+					<Footer />
 				</div>
 			)}
 		</ColorModeContext.Consumer>

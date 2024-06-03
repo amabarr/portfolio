@@ -1,7 +1,5 @@
 import * as React from "react";
-import { Layout, SEO } from "../components";
-
-import { Skills } from "../components/resume";
+import { Layout, SEO, Skills } from "../components";
 
 const SkillsPage = () => (
 	<Layout>
@@ -11,7 +9,4 @@ const SkillsPage = () => (
 
 export default SkillsPage;
 
-
-export const Head = () => (
-	<SEO title="Skills"/>
-)
+export const Head = () => <SEO title='Skills' />;

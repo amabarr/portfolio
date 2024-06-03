@@ -1,6 +1,6 @@
 import React from "react";
 import selfPortrait from "../images/me.jpg";
-import { DownloadResumeLink } from "./DownloadResumeLink";
+import { DownloadResumeLink } from "./resume/downloadResumeLink";
 
 export const AboutMe = () => {
 	return (
