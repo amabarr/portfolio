@@ -1,10 +1,9 @@
 import * as React from "react";
-import { Layout, SEO, Skills } from "../components";
+import { SEO, Skills } from "../components";
 
 const SkillsPage = () => (
-	<Layout>
+
 		<Skills />
-	</Layout>
 );
 
 export default SkillsPage;

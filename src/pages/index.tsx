@@ -1,13 +1,13 @@
 import React from "react";
-import { Layout, AboutMe, SEO } from "../components";
+import { AboutMe, SEO } from "../components";
 
 const Index = () => (
 	<>
-		<Layout>
+
 			<div id='index'>
 				<AboutMe />
 			</div>
-		</Layout>
+	
 	</>
 );
 
