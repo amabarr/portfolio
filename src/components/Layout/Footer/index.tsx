@@ -1,4 +1,6 @@
 import React from "react";
+import { FaGithub, FaLinkedin } from "react-icons/fa6";
+
 
 export const Footer = () => (
 	// TODO:  add icons, remove class names
@@ -8,10 +10,10 @@ export const Footer = () => (
 				href='https://www.linkedin.com/in/amanda-barrafato/'
 				aria-label='LinkedIn'
 			>
-				LinkedIn
+				<FaLinkedin />
 			</a>
 			<a href='https://github.com/amabarr/' aria-label='Github'>
-			Github
+			<FaGithub />
 			</a>
 		</div>
 	</footer>

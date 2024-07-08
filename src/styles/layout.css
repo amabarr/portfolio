@@ -75,7 +75,7 @@ header {
 	align-items: center;
 	justify-content: space-around;
 	font-size: 1rem;
-	padding: 20px;
+	padding: 1rem 2.5rem;
 }
 
 a {
@@ -83,6 +83,8 @@ a {
 	text-decoration: none;
 	text-align: center;
 	padding: 3px;
+	min-width: 2.75rem;
+	min-height: 1.375rem;
 }
 
 .links {
@@ -92,6 +94,7 @@ a {
 	flex-wrap: wrap;
 	-webkit-flex-wrap: wrap;
 	width: 60%;
+	font-size: 1rem;
 }
 
 .resumeLinks {
@@ -137,9 +140,8 @@ a {
 	display: flex;
 	align-items: center;
 	font-family: "Creepster", cursive;
-	font-display: "optional";
 	text-align: center;
-	font-size: 3rem;
+	font-size: 4rem;
 }
 
 #amanda:hover {
@@ -613,10 +615,6 @@ footer img {
 
 	.links {
 		width: 85%;
-	}
-
-	#amanda {
-		font-size: 2.75rem;
 	}
 
 	.music img {

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-enum ColorMode {
+export enum ColorMode {
 	DARK = "dark",
 	LIGHT = "light",
 } 
