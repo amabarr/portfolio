@@ -7,12 +7,7 @@ const {
 const isNetlifyProduction = NETLIFY_ENV === "production";
 const siteUrl = isNetlifyProduction ? NETLIFY_SITE_URL : NETLIFY_DEPLOY_URL;
 
-const adapter = require("gatsby-adapter-netlify")
-
 module.exports = {
-  adapter: adapter({
-    excludeDatastoreFromEngineFunction: false,
-  }),
 	siteMetadata: {
 		title: "Amanda Barrafato",
 		description: "Amanda Barrafato's Portfolio",
