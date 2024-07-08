@@ -1,7 +1,9 @@
-import React from "react";
-import { useTernaryDarkMode } from "usehooks-ts";
+import React, { useState } from "react";
 
-type ColorMode = "dark" | "light";
+enum ColorMode {
+	DARK = "dark",
+	LIGHT = "light",
+} 
 
 interface ColorModeContextType {
 	colorMode: ColorMode;
@@ -9,20 +11,20 @@ interface ColorModeContextType {
 }
 
 export const ColorModeContext = React.createContext<ColorModeContextType>({
-	colorMode: "light",
+	colorMode: ColorMode.LIGHT,
 	setColorMode: () => null,
 });
 
 export const ColorModeContextProvider: React.FC<React.PropsWithChildren> = ({
 	children,
 }) => {
-	const { ternaryDarkMode, setTernaryDarkMode } = useTernaryDarkMode();
+	const [colorMode, setColorMode] = useState<ColorMode>(ColorMode.LIGHT);
 
 	return (
 		<ColorModeContext.Provider
 			value={{
-				colorMode: ternaryDarkMode === "dark" ? "dark" : "light",
-				setColorMode: setTernaryDarkMode,
+				colorMode,
+				setColorMode,
 			}}
 		>
 			{children}

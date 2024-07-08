@@ -1,7 +1,5 @@
-import React, { useContext, useMemo } from "react";
+import React from "react";
 import { useSiteMetadata } from "../hooks/useSiteMetaData";
-import { useDarkMode, useTernaryDarkMode } from "usehooks-ts";
-import { ColorModeContext } from "./ColorModeContext";
 
 interface SEOProps {
 	title?: string;
