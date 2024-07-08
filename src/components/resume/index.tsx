@@ -9,7 +9,7 @@ export const Skills: React.FC = () => (
 			{Object.keys(skillsData).map((type, index) => {
 				return (
 					<div className='skills flex' key={`skills_list_${index}`}>
-						<h3>{type}</h3>
+						<h3 className='skillTitle'>{type}</h3>
 						<ul>
 							{skillsData[type as SkillDataType].map((item, index) => {
 								return <li key={`${type}_${index}`}>{item}</li>;
