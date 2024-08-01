@@ -1,13 +1,7 @@
 import * as React from "react";
-import { Layout, Music, SEO } from "../components";
+import {  Music, SEO } from "../components";
 
-const music = () => (
-	<>
-		<Layout>
-			<Music />
-		</Layout>
-	</>
-);
+const music = () => <Music />
 
 export default music;
 

@@ -7,7 +7,7 @@ const {
 const isNetlifyProduction = NETLIFY_ENV === "production";
 const siteUrl = isNetlifyProduction ? NETLIFY_SITE_URL : NETLIFY_DEPLOY_URL;
 
-module.exports = {
+const config = {
 	siteMetadata: {
 		title: "Amanda Barrafato",
 		description: "Amanda Barrafato's Portfolio",
@@ -16,80 +16,23 @@ module.exports = {
 		siteUrl,
 	},
 	plugins: [
-		"gatsby-plugin-sharp",
 		{
-			resolve: "gatsby-plugin-manifest",
+			resolve: `gatsby-omni-font-loader`,
 			options: {
-				name: "Amanda Barrafato's portfolio",
-				short_name: "Amanda",
-				start_url: "/",
-				background_color: "#6b37bf",
-				theme_color: "#6b37bf",
-				display: `minimal-ui`,
-				icon: "src/images/icon.png",
-			},
-		},
-		"gatsby-transformer-sharp",
-		{
-			resolve: "gatsby-source-filesystem",
-			options: {
-				name: "images",
-				path: "./src/images/",
-			},
-			__key: "images",
-		},
-		{
-			resolve: "gatsby-plugin-web-font-loader",
-			options: {
-				google: {
-					families: ["Creepster: 400"],
-				},
-			},
-		},
-		{
-			resolve: `gatsby-transformer-remark`,
-			options: {
-				plugins: [
+				enableListener: true,
+				preconnect: [
+					`https://fonts.googleapis.com`,
+					`https://fonts.gstatic.com`,
+				],
+				web: [
 					{
-						resolve: "gatsby-remark-emojis",
-						options: {
-							active: true,
-							class: "emoji-icon",
-							escapeCharacter: "#",
-							size: 64,
-							styles: {
-								display: "inline",
-								margin: "0",
-								"margin-top": "1px",
-								position: "relative",
-								top: "5px",
-								width: "25px",
-							},
-						},
+						name: `Open Sans`,
+						file: `https://fonts.googleapis.com/css2?family=Creepster&display=swap`,
 					},
 				],
 			},
 		},
-		{
-			resolve: "gatsby-plugin-robots-txt",
-			options: {
-				resolveEnv: () => NETLIFY_ENV,
-				env: {
-					production: {
-						policy: [{ userAgent: "*" }],
-					},
-					"branch-deploy": {
-						policy: [{ userAgent: "*", disallow: ["/"] }],
-						sitemap: null,
-						host: null,
-					},
-					"deploy-preview": {
-						policy: [{ userAgent: "*", disallow: ["/"] }],
-						sitemap: null,
-						host: null,
-					},
-				},
-			},
-		},
 	],
 };
+
+export default config;

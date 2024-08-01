@@ -1,10 +1,10 @@
 import * as React from "react";
 import { Link } from "gatsby";
-import { Layout, SEO} from "../components";
+import { SEO } from "../components";
 
 const NotFoundPage = () => {
 	return (
-		<Layout>
+		<>
 			<div className='error flex'>
 				<h1 className='error-title'>404</h1>
 				<h2 className='error'>PAGE NOT FOUND</h2>
@@ -25,12 +25,10 @@ const NotFoundPage = () => {
 					</Link>
 				</p>
 			</div>
-		</Layout>
+		</>
 	);
 };
 
 export default NotFoundPage;
 
-export const Head = () => (
-	<SEO title="Not Found"/>
-)
+export const Head = () => <SEO title='Not Found' />;

@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { ColorModeContext } from "../ColorModeContext";
+import { ColorMode, ColorModeContext } from "../ColorModeContext";
 
 export const ThemeSelector = () => {
 	const { colorMode, setColorMode } = useContext(ColorModeContext);
@@ -9,15 +9,14 @@ export const ThemeSelector = () => {
 			{colorMode === "dark" ? (
 				<i
 					className='gg-sun'
-					onClick={() => setColorMode("light")}
+					onClick={() => setColorMode(ColorMode.LIGHT)}
 					aria-label='Set light mode'
 				/>
 			) : (
 				<i
 					className='gg-moon'
 					onClick={() => {
-						console.log("PRESSING THE BUTTON", colorMode);
-						return setColorMode("dark");
+						return setColorMode(ColorMode.DARK);
 					}}
 					aria-label='Set dark mode'
 				/>
