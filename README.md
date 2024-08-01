@@ -11,7 +11,7 @@ When I'm not coding, you can find me playing guitar, curled up reading a book ne
 
 # Technologies
 
-This portfolio was made using Gatsby Minimal Starter, React, Javascript, Gatsby, raw CSS, and deployed with Netlify.
+This portfolio was made using Gatsby, React, TypeScript, raw CSS, and deployed with Netlify.
 
 See it live at: https://www.amanda.dev/
 
