@@ -602,7 +602,8 @@ footer img {
 
 @media screen and (max-width: 800px) {
 	.music {
-		width: 30rem;
+		width: 20rem;
+		align-items: center;
 	}
 }
 
@@ -664,9 +665,10 @@ footer img {
 	}
 
 		.music {
-			width: 30rem;
+			width: 20rem;
 			flex-direction: column;
 			flex-wrap: wrap;
+			align-items: center;
 		}
 }
 
