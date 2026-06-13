@@ -13,7 +13,7 @@ type SkillsDataType = {
 
 export const skillsData : SkillsDataType = {
 	[SkillDataType.Frontend]: ["React", "Redux", "Next.js", "Gatsby", "HTML", "CSS", "Styled Components"],
-	[SkillDataType.Backend]: ["Node.js", "Sequelize", "SQL", "PostgresSQL", "Axios", "Express"],
+	[SkillDataType.Backend]: ["Ruby","Node.js", "Sequelize", "SQL", "PostgresSQL", "Axios", "Express"],
 	[SkillDataType.Languages]: ["TypeScript", "JavaScript", "Ruby on Rails", "C++"],
 	[SkillDataType.Testing]: ["Jest", "RSpec", "Mocha", "Chai", "Jasmine"],
 	[SkillDataType.Other]: ["GraphQL", "Heroku", "Netlify", "GitHub Pages"]
