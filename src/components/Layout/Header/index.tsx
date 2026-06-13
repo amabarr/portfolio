@@ -19,9 +19,6 @@ export const Header = () => (
 			<Link to='/skills' className='underline'>
 				SKILLS
 			</Link>
-			<Link to='/contact' className='underline'>
-				CONTACT ME
-			</Link>
 			<ThemeSelector />
 		</div>
 	</header>
