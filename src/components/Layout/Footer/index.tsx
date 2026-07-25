@@ -3,7 +3,6 @@ import { FaGithub, FaLinkedin } from "react-icons/fa6";
 
 
 export const Footer = () => (
-	// TODO:  add icons, remove class names
 	<footer className='flex'>
 		<div className='footer iconLinks links flex'>
 			<a

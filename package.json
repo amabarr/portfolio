@@ -1,6 +1,6 @@
 {
 	"name": "amanda-barrafatos-portfolio",
-	"version": "2.0.1",
+	"version": "3.0.1",
 	"private": true,
 	"description": "Amanda Barrafato's Portfolio",
 	"author": "Amanda Barrafato",
@@ -18,23 +18,15 @@
 		"clean": "gatsby clean"
 	},
 	"dependencies": {
+		"@fontsource/creepster": "^5.3.0",
 		"gatsby": "^5.16.1",
-		"gatsby-omni-font-loader": "^2.0.2",
 		"react": "^19.2",
 		"react-dom": "^19.2",
-		"react-helmet": "^6.1.0",
+		"react-helmet-async": "^3.0.0",
 		"react-icons": "^5.2.1"
 	},
 	"devDependencies": {
 		"prettier": "3.3.2",
 		"typescript": "^5.5.3"
-	},
-	"overrides": {
-		"react-server-dom-webpack@0.0.0-experimental-c8b778b7f-20220825": {
-			"react": "^19.2"
-		}
-	},
-	"optionalDependencies": {
-		"@parcel/watcher-linux-x64-glibc": "^2.4.2-alpha.0"
 	}
 }
