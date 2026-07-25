@@ -1,37 +1,18 @@
-* {
-	box-sizing: border-box;
-}
-
-body {
-	margin: 0
-}
-
-.layout {
-		min-height: 100vh;
-		min-width: 100vw;
-		margin: 0;
-			display: flex;
-			display: -webkit-flex;
-			flex-direction: column;
-			font-family: "Fira Code", monospace;
-
-			--bg: white;
-			--textNormal: black;
-			--textDecor: #a739c2;
-			--textTitle: black;
-			--textLink: black;
-			--borderColor: black;
-			--headerColor: rgb(181, 134, 181);
-			--primary: rgb(181, 134, 181);
-			--secondary: #c8bfff;
-			--cardColor: rgb(247, 247, 247);
-			--formColor: white;
-			--hr: var(--headerColor);
-			--hoverColor: #c8bfff;
-			--shadowColor: #ced4da;
-
-			background-color: var(--bg);
-			color: var(--textNormal);
+:root {
+  --bg: white;
+  --textNormal: black;
+  --textDecor: #a739c2;
+  --textTitle: black;
+  --textLink: black;
+  --borderColor: black;
+  --headerColor: rgb(181, 134, 181);
+  --primary: rgb(181, 134, 181);
+  --secondary: #c8bfff;
+  --cardColor: rgb(247, 247, 247);
+  --formColor: white;
+  --hr: var(--headerColor);
+  --hoverColor: #c8bfff;
+  --shadowColor: #ced4da;
 }
 
 .dark {
@@ -51,6 +32,33 @@ body {
 	--primary: rgb(121, 85, 121);
 	--hoverColor: rgb(212, 179, 240);
 	--shadowColor: #3a3939;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+	margin: 0;
+  padding: 0;
+}
+
+html {
+  overscroll-behavior-y: none;
+}
+
+.layout {
+		min-height: 100vh;
+		min-width: 100%;
+		margin: 0;
+			display: flex;
+			display: -webkit-flex;
+			flex-direction: column;
+			font-family: "Fira Code", monospace;
+			background-color: var(--bg);
+			color: var(--textNormal);
 }
 
 img {
@@ -449,6 +457,11 @@ footer {
 	margin: 0px;
 	display: flex;
 	justify-content: center;
+}
+
+footer::after {
+  height: 100vh;
+  background-color: var(--primary);
 }
 
 footer .links {
